@@ -1,0 +1,181 @@
+body{
+    background-color:rgb(218, 125, 221)
+}
+
+main{
+    text-align: center
+}
+
+form{
+    display: inline-block
+}
+
+.pgj{
+    height: 50%;
+    width: 50%
+}
+
+.midja{
+    width: 80%;
+    margin: 0 auto;
+}
+
+table{
+    border:1px solid #ccc;
+    border-collapse: collapse;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    table-layout: fixed
+}
+
+table tr{
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    padding: .35em
+}
+
+table td,
+table th{
+    padding: .625em;
+    text-align: center
+}
+
+table th{
+    font-size: .85em;
+    letter-spacing: .1em;
+    text-transform: uppercase
+}
+
+.Hnappi{
+    background-color:#adff2f
+}
+
+
+.dropdown{
+    text-align: right
+}
+
+.lik{
+    display:grid;grid-template-areas:"haus select"
+}
+
+.select{
+    padding:1em;text-align:right
+}
+
+.hide
+{display:none
+}
+.dropbtn{
+    display:none;background-color:transparent;color:#000;padding:16px;font-size:16px;border:none
+}
+
+.dropdown{
+    position:relative;display:inline-block
+}
+
+.dropdown-content{
+    display: flex;
+    position: inherit;
+    background-color: #71e0e0;
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,.2);
+    z-index: 1
+}
+
+.dropdown-content a{
+    color: #000;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block
+}
+
+.fotur a{
+    text-align:center;color:#000;text-decoration:none
+}
+
+@media screen and (max-width:720px){
+
+.hide{
+    display:inline-block
+}
+
+.dropbtn{
+    display:inline
+}
+
+.dropdown-content{
+    display:none
+}
+
+.fotur a{
+    display:flex
+}
+
+.dropdown-content a:hover{
+    background-color:#ddd
+}
+
+.dropdown:hover .dropdown-content{
+    display: block
+}
+
+.dropdown:hover .dropbtn{
+    background-color: transparent}
+
+}
+
+p{
+    margin: 0;
+    padding: 0
+}
+
+.big{
+    font-size: small;
+    font-family: 'Poppins', sans-serif;
+}
+
+@media screen and (max-width:600px){
+img{
+    width: 100%;
+    height: auto
+}
+
+table{
+    border: 0
+}
+
+table thead{
+    border: none;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px
+}
+
+table tr{
+    border-bottom:3px solid #ddd;display:block;margin-bottom:.625em
+}
+
+table td{
+    border-bottom:1px solid #ddd;
+    display:block;
+    font-size:.8em;
+    text-align:right
+}
+
+table td::before{
+    content:attr(data-label);
+    float:left;
+    font-weight:700;
+    text-transform:uppercase
+}
+
+table td:last-child{
+    border-bottom:0
+}
+}
