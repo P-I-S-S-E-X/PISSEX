@@ -151,16 +151,10 @@
 <p>I know, it sounds unbelivable, that he did not share this with me, knowing full well I would understand, that I would help him.</p>
 <p>he was quite sorrowful when i walked in but joyous when I explained that it was okay.</p>
 <p>However, now, I know which signs are true. It is as literal as day that I know when someone has interest in the Bibble practice or is doing it.</p>
-<label for="tímar"id="Timastað">classes start again at this date with how covid is going:</label>
-<input type="date" 
-       id="tímar" 
-       name="tímar"
-       min="2021-08-01" 
-       max="2021-08-31"
-       defaultValue="2021-08-01">
+
 <p>main headquarters:</p>
-<div id="map-container-google-1" class="z-depth-1-half map-container" style="height: 500px">
-  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1271591.7958666675!2d0.29431863358550003!3d51.5026161495986!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761ce7c1afffff%3A0x74e7f430a8c8cf57!2sSex%20Education%20Forum!5e0!3m2!1sen!2sis!4v1620756600279!5m2!1sen!2sis" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+<div id="map-container-google-1" class="z-depth-1-half map-container">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1271591.7958666675!2d0.29431863358550003!3d51.5026161495986!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761ce7c1afffff%3A0x74e7f430a8c8cf57!2sSex%20Education%20Forum!5e0!3m2!1sen!2sis!4v1620756600279!5m2!1sen!2sis" allowfullscreen="" loading="lazy"></iframe>
   </div>
 </div>
 </section>
@@ -225,24 +219,24 @@
      <legend >Skráning:</legend>
       <form action="/action_page.php" class= "form">
         <label for="fname">Fullt nafn:</label>
-        <input type="text" id="fname" name="fname" value=" ">
+        <input type="text" id="fname" name="fname" required>
         <br>
         <label for="birthday">fæðingadagur:</label><br>
         <input type="date" id="fæðingadagur" name="fæðingardagur"><br>
         <br>
         <label for="Simanumer">Sími:</label><br>
-        <input type="tel" id="simanumer" placeholder="(phone number here)">
+        <input type="tel" id="simanumer" placeholder="(phone number here)" required>
         <br>
         <label for="email-input">email:</label><br>
-        <input 
+        <input required
               id="email-input" 
               type="email" 
               name="email-inputted" 
-              placeholder="forráðamaður@gmail.com">
+              placeholder="nafn@gmail.com">
           <br>
-          <label>kyn:</label><br>
+          <label for="male">kyn:
           <input type="radio" id="male" name="kyn" value="kk">
-          <label for="male">kk</label><br>
+          kk</label><br>
 
           <input type="radio" id="female" name="kyn" value="kvk">
           <label for="female">kvk</label><br>
